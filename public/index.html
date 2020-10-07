@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chat Socket.io</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito" rel="stylesheet">
+
+<style type="text/css">
+	img {
+     height: 33px;
+}
+</style>
+</head>
+<body>
+
+
+	<div id="chat-container">
+			<form onsubmit="return enterName();">
+        <input id="name" type="text" class="search-bar"  placeholder="Enter name" >
+                  <span class="input-group-addon">
+
+     <button type="submit"> enviar<i class="fa fa-plus" aria-hidden="true"></i> </button>
+                  </span>
+    </form>
+	 <div id="chat-window">
+	 	<div id="output">
+
+
+	 	</div>
+	 	<div id="actions">
+
+	 	</div>
+	 	<input type="text" id="received" placeholder="enviar a">
+
+	 	<input type="text" id="username" placeholder="username">
+	 	<input type="text" id="message" placeholder="message">
+	 	<button id="send">Send</button>
+	 </div>
+
+    	<ul id="users"></ul>
+
+	</div>
+
+
+	<script type="text/javascript" src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="chat.js"></script>
+</body>
+</html>
